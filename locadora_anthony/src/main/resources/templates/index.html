@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt" xmlns="http://thymeleaf.org/">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locadora de Carros XYZ</title>
-    <link rel="stylesheet" th:href="@{css/style-index.css}">
-    <link rel="stylesheet" type="text/css" href="Fragmentos/header.css">
-    <link rel="stylesheet" type="text/css" href="Fragmentos/footer.css">
-</head>
-<body>
-    <div class="container">
-        <header th:replace="Fragmentos/header :: header"></header>
-
-        <section class="banner">
-            <h2>Aluguel de Carros</h2>
-            <p>Encontre o carro perfeito para sua viagem!</p>
-            <a href="#" class="btn">Veja Nossos Carros</a>
-        </section>
-
-        <section class="featured-cars">
-            <h2>Carros em Destaque</h2>
-            <!-- Aqui eu irei adicionar imagens e informações sobre os carros em destaque (em progresso) -->
-        </section>
-    </div>
-
-    <footer th:replace="Fragmentos/footer :: footer"></footer>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Locadora de Carros XYZ</title>
+        <link rel="stylesheet" th:href="@{css/style-index.css}">
+        <link rel="stylesheet" th:href="@{Fragmentos/header.css}">
+    </head>
+    <body>
+        <div class="container">
+            <header th:replace="Fragmentos/header :: header"></header>
+    
+            <section class="banner">
+                <h2>Aluguel de Carros</h2>
+                <p>Encontre o carro perfeito para sua viagem!</p>
+                <a href="#" class="btn">Veja Nossos Carros</a>
+            </section>
+    
+            <section class="featured-cars">
+                <h2>Carros em Destaque</h2>
+                <!-- Aqui eu irei adicionar imagens e informações sobre os carros em destaque (em progresso) -->
+            </section>
+        </div>
+    
+        <footer th:replace="Fragmentos/footer :: footer"></footer>
+    </body>
+    </html>
+    
