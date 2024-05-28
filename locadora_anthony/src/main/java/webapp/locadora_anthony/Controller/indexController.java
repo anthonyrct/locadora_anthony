@@ -12,5 +12,11 @@ public class indexController {
     public String acessoHomePage() {
         return "index";
     }
+
+    @GetMapping("/")
+    public String getMethodName(@RequestParam String param) {
+        return new String();
+    }
+    
     
 }

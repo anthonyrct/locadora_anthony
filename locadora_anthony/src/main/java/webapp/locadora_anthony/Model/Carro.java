@@ -1,12 +1,16 @@
 package webapp.locadora_anthony.Model;
 
+
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class Carro {
     @Id
-    private String id_carro;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id_carro;
     private String modelo;
     private int ano;
     private String placa;
@@ -15,10 +19,10 @@ public class Carro {
 
     //getters e setters
 
-    public String getId_carro() {
+    public long getId_carro() {
         return id_carro;
     }
-    public void setId_carro(String id_carro) {
+    public void setId_carro(long id_carro) {
         this.id_carro = id_carro;
     }
     public String getModelo() {
