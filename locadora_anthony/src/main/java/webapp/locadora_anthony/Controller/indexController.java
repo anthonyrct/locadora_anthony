@@ -13,9 +13,14 @@ public class indexController {
         return "index";
     }
 
-    @GetMapping("/")
-    public String getMethodName(@RequestParam String param) {
-        return new String();
+    @GetMapping("/login")
+    public String acessoPageLogin() {
+        return "login/login";
+    }
+
+    @GetMapping("/cadastro-usuario")
+    public String acessoPageCadastro() {
+        return "cadastro/cadastro_usuario";
     }
     
     
