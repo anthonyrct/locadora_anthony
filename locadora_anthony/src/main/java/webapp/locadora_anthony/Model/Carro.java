@@ -14,7 +14,7 @@ public class Carro {
     private String modelo;
     private int ano;
     private String placa;
-    private String disponibilidade;
+    private boolean disponibilidade;
     private int numero_agencia;
 
     //getters e setters
@@ -43,10 +43,10 @@ public class Carro {
     public void setPlaca(String placa) {
         this.placa = placa;
     }
-    public String getDisponibilidade() {
+    public boolean getDisponibilidade() {
         return disponibilidade;
     }
-    public void setDisponibilidade(String disponibilidade) {
+    public void setDisponibilidade(boolean disponibilidade) {
         this.disponibilidade = disponibilidade;
     }
     public int getNumero_agencia() {

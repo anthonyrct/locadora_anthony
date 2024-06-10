@@ -5,6 +5,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import webapp.locadora_anthony.Model.Carro;
 
-public interface CarroRepository extends JpaRepository<Carro, Long> {
-    //List <Carro> findByDisponibilidade(String disponibilidade);
+public interface CarroRepository extends JpaRepository<Carro, interger> {
+    List <Carro> findByDisponibilidadeTrue();
 }
